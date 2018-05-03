@@ -1,0 +1,15 @@
+<h3>String Interpolation</h3>
+<p>Value of str1: {{str1}}</p>
+<p>Value of str2: {{str2}}</p>
+<div [ngStyle]=changeStyle()>
+	<input type="text" value="Property Binding">
+	<p>RED</p>
+</div>
+<h3>Event Binding (todo)</h3>
+<input type="button" value="change" (click)=changeText()>
+<input type="button" value="undo" (click)=reverseText()>
+<p>{{before}}</p>
+
+<h3>Two Way Data Binding</h3>
+<input type="text" [(ngModel)="mirror"]>
+<p>{{"mirror"}}</p>
